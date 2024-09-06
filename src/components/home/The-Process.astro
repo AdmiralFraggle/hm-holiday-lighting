@@ -1,0 +1,51 @@
+---
+const services = [
+  {
+    step: '01',
+    name: 'Design',
+    description:
+      'Our team will help create a fully custom design to fit both your wishes and budget. ',
+  },
+  {
+    step: '02',
+    name: 'Installation',
+    description:
+      'Our team will purchase and install the full design. Everything is custom made for each home in order to provide the cleanest fit. ',
+  },
+  {
+    step: '03',
+    name: 'Tear Down',
+    description:
+      'Guaranteed removal by January 31st.',
+  },
+  {
+    step: '04',
+    name: 'Storage',
+    description:
+      ' All supplies will be stored by H&M for the following season.',
+  },
+];
+---
+
+<section class="py-16 sm:py-20">
+  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="flex flex-col gap-12 sm:gap-16">
+      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">The Process</h2>
+      <div class="grid gap-8 lg:grid-cols-3">
+        {
+          services.map((service) => (
+            <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-12 rounded-3xl px-6 py-8">
+              <p class="text-sm">{service.step}</p>
+              <div class="flex flex-col gap-4">
+                <h3 class="text-xl font-medium">{service.name}</h3>
+                <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
+                  {service.description}
+                </p>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
