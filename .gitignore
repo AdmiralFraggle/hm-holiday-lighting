@@ -26,3 +26,6 @@ pnpm-debug.log*
 .DS_Store
 Brewfile.lock.json
 .meta
+
+# Local Netlify folder
+.netlify
