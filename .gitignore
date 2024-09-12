@@ -22,3 +22,10 @@ pnpm-debug.log*
 
 # vscode folder
 .vscode
+
+.DS_Store
+Brewfile.lock.json
+.meta
+
+# Local Netlify folder
+.netlify
